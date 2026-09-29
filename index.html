@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
   <!-- ===== SEO PRINCIPAL ===== -->
   <title>V.15 | Marketplace Online — Comprar Produtos, Ver Vídeos e Vender</title>
   <meta name="description" content="V.15 é o marketplace onde compras produtos ao melhor preço, vês vídeos de marketing reais e vendes online. Avaliações, entrega rápida e vendedores verificados. ✅">
