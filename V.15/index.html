@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO PRINCIPAL ===== -->
+  <title>V.15 | Marketplace Online — Comprar Produtos, Ver Vídeos e Vender</title>
+  <meta name="description" content="V.15 é o marketplace onde compras produtos ao melhor preço, vês vídeos de marketing reais e vendes online. Avaliações, entrega rápida e vendedores verificados. ✅">
+  <meta name="keywords" content="marketplace online, comprar produtos online, vender online, vídeos de produtos, V.15">
+  <meta name="author" content="V.15">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://v15.com/">
+
+  <!-- ===== SEO SOCIAL (Open Graph) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="V.15 | Marketplace com Vídeos de Marketing">
+  <meta property="og:description" content="Compra, vende e vê vídeos de produtos no V.15. O marketplace que liga vendedores a compradores.">
+  <meta property="og:url" content="https://v15.com/">
+  <meta property="og:image" content="https://v15.com/assets/og-v15.jpg">
+  <meta property="og:locale" content="pt_PT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="V.15 | Marketplace com Vídeos de Marketing">
+  <meta name="twitter:description" content="Compra, vende e vê vídeos de produtos no V.15.">
+
+  <!-- ===== SCHEMA.ORG (dados estruturados) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "V.15",
+    "url": "https://v15.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://v15.com/produtos?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+  <!-- ===== SKIP LINK (Acessibilidade) ===== -->
+  <a href="#main" class="skip-link">Saltar para o conteúdo principal</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+
+      <a href="/" class="logo" aria-label="V.15 — Página inicial">
+        <span class="logo__mark">V<span class="logo__dot">.</span>15</span>
+      </a>
+
+      <!-- Busca (SEO + UX) -->
+      <form class="search" role="search" action="/produtos" method="get">
+        <label for="search-input" class="sr-only">Pesquisar produtos</label>
+        <input type="search" id="search-input" name="q"
+               placeholder="Pesquisar produtos, marcas e vendedores…"
+               autocomplete="off">
+        <button type="submit" aria-label="Pesquisar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="/produtos">Produtos</a></li>
+          <li><a href="/videos">Vídeos</a></li>
+          <li><a href="/vender">Vender</a></li>
+          <li><a href="/recomendados">Recomendados</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="/entrar" class="btn btn--ghost">Entrar</a>
+        <a href="/carrinho" class="btn btn--cart" aria-label="Carrinho de compras">
+          🛒 <span class="cart-count" aria-hidden="true">0</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Categorias (Silo SEO) -->
+    <nav class="categories" aria-label="Categorias de produtos">
+      <div class="container categories__inner">
+        <a href="/produtos/eletronicos">📱 Eletrónicos</a>
+        <a href="/produtos/moda">👕 Moda</a>
+        <a href="/produtos/casa">🏠 Casa &amp; Jardim</a>
+        <a href="/produtos/beleza">💄 Beleza</a>
+        <a href="/produtos/desporto">⚽ Desporto</a>
+        <a href="/produtos/informatica">💻 Informática</a>
+        <a href="/produtos/brinquedos">🧸 Brinquedos</a>
+        <a href="/produtos/ofertas">🔥 Ofertas</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-title">Compra. Vende. Vê. <span class="accent">Tudo no V.15.</span></h1>
+          <p>O marketplace onde encontras os melhores produtos ao melhor preço — e onde podes publicar os teus e começar a vender hoje.</p>
+          <div class="hero__cta">
+            <a href="/produtos" class="btn btn--primary btn--lg">Explorar produtos</a>
+            <a href="/vender" class="btn btn--outline btn--lg">Começar a vender</a>
+          </div>
+        </div>
+        <div class="hero__stats" role="list">
+          <div class="stat" role="listitem"><strong>+2.400</strong><span>Produtos</span></div>
+          <div class="stat" role="listitem"><strong>+180</strong><span>Vendedores</span></div>
+          <div class="stat" role="listitem"><strong>+50</strong><span>Vídeos/dia</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES (produtos patrocinados → monetização) -->
+    <section class="section" aria-labelledby="destaques-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="destaques-title">Produtos em destaque</h2>
+          <a href="/produtos?s=destaque" class="link-more">Ver todos →</a>
+        </div>
+        <div class="grid grid--products" id="grid-destaques" role="list">
+          <!-- Preenchido via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VÍDEOS DE MARKETING (TikTok style) -->
+    <section class="section section--videos" aria-labelledby="videos-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="videos-title">🎥 Vídeos de Marketing</h2>
+          <a href="/videos" class="link-more">Ver todos →</a>
+        </div>
+        <div class="videos-strip" id="videos-strip" role="list">
+          <!-- Preenchido via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIAS (SEO interno) -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <h2 id="cat-title">Explora por categoria</h2>
+        <div class="grid grid--cats" id="grid-cats" role="list"></div>
+      </div>
+    </section>
+
+    <!-- CTA VENDER (conversão) -->
+    <section class="cta-seller" aria-labelledby="cta-seller-title">
+      <div class="container cta-seller__inner">
+        <h2 id="cta-seller-title">Tens produtos para vender?</h2>
+        <p>Publique grátis, chegando a milhares de compradores. Só pagas comissão quando vendes.</p>
+        <a href="/vender" class="btn btn--primary btn--lg">Publicar produto grátis</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <span class="logo__mark">V<span class="logo__dot">.</span>15</span>
+        <p>O marketplace que liga compradores, vendedores e criadores de vídeo.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Comprar</h3>
+        <ul>
+          <li><a href="/produtos">Todos os produtos</a></li>
+          <li><a href="/ofertas">Ofertas</a></li>
+          <li><a href="/recomendados">Recomendados</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Vender</h3>
+        <ul>
+          <li><a href="/vender">Começar a vender</a></li>
+          <li><a href="/planos">Planos e comissões</a></li>
+          <li><a href="/vendedores">Vendedores</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Ajuda</h3>
+        <ul>
+          <li><a href="/ajuda">Centro de ajuda</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/sobre">Sobre o V.15</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 V.15 — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
